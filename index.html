@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> XTIME TOOLS </title>
+    <link rel="stylesheet" type="text/css" href="xtimeTools/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="xtimeTools/css/style.css">
+</head>
+<body ng-app = "xtimeTools">
+
+    <a ui-sref="admin" class="btn btn-primary"> ADMIN </a>
+    <a ui-sref="promoStatus" class="btn btn-primary"> PROMO STATUS </a>
+
+    <div ui-view></div>
+
+    <script type="text/javascript" src = "xtimeTools/lib/angular.min.js"></script>
+    <script type="text/javascript" src = "xtimeTools/lib/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src = "xtimeTools/lib/angular-ui-router.min.js"></script>
+
+    <script type="text/javascript" src = "xtimeTools/js/app.js"></script>
+    <script type="text/javascript" src = "xtimeTools/js/controller/Admin.js"></script>
+    <script type="text/javascript" src = "xtimeTools/js/controller/PromoStatus.js"></script>
+
+</body>
+</html>

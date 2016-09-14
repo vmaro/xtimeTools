@@ -1,0 +1,271 @@
+body {
+    color: #000;
+    float: left;
+    margin: 0 auto;
+    width: 1000px;
+    border: solid 15px;
+    border-color: #141414;
+    border-top: none;
+    border-bottom: none;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+.category-group {
+    width: 90%;
+    height: 39px;
+    color: #0084ad;
+    cursor: pointer;
+    font-weight: 900;
+    line-height: 39px;
+    padding-left: 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #0084ad;
+    border-bottom: none;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .7s;
+    -moz-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    transition-duration: .7s;
+}
+.category-group.popup {
+    font-size: 11px;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    font-weight: 600;
+}
+.category-group:last-of-type {
+    border-bottom: 1px solid #0084ad;
+}
+.category-group:hover {
+    background-color: rgb(223, 237, 243);
+}
+.category-group.selected {
+    color: #fff;
+    background-color: #0084ad;
+}
+.categories-title {
+    font-weight: 900;
+    padding-left: 10px;
+    color: rgb(20, 20, 20);
+}
+
+
+
+.category-title {
+    margin-bottom: 0;
+    font-weight: 900;
+    padding-left: 10px;
+    background-color: rgb(7, 135, 171);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px 5px 0 0;
+}
+.category-title.popup {
+    margin-top: 0px;
+}
+.category-title.popup .glyphicon {
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.category-title.popup .glyphicon:hover {
+    opacity: 0.8;
+}
+
+.terms-box {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(223, 237, 243);
+}
+
+.term {
+    float: left;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #0787AB;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.term.selected {
+    background-color: rgb(196, 79, 24);
+}
+
+.modal-content {
+    padding: 5px;
+}
+
+
+
+.globalBtn {
+    margin-left: 10px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #fff;
+    border: 1px solid #3b6e8e;
+    padding: 0 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #3b6e8e;
+    text-align: center;
+    font: normal 13px MyriadPro-Bold;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.globalBtn.right {
+    float: right;
+}
+
+.globalBtn.disabled {
+    background-color: #DBDCDC;
+}
+
+.divider {
+    margin-top: 10px;
+}
+
+.message {
+    padding: 5px;
+    background: #DCE6B3;
+    border-bottom: 1px solid #b8c97b;
+}
+.message.bad {
+    background: #DABABA;
+    border-bottom: 1px solid #C57373;
+}
+.message span {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 10px;
+    color: rgb(26, 26, 25);
+}
+
+.xtreme {
+    padding: 10px;
+    background: #141414;
+}
+
+.xtreme .title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: rgb(248, 248, 248);
+}
+
+.content {
+    min-height: 500px;
+}
+.content .main {
+    margin-top: 25px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.mask {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 970px;
+    height: 510px;
+    margin-top: 42px;
+    margin-left: 15px;
+    position: absolute;
+    background: url('../images/loading.gif') no-repeat;
+    background-color: rgba(37, 35, 35, 1);
+    background-position: center;
+}
+
+.fade.in {
+    background: rgba(12, 12, 12, 0.3);
+}
+
+.globalCombo {
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #2E2E2E 0%, rgb(28, 26, 25) 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #2E2E2E 0%, rgb(28, 26, 25) 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #2E2E2E 0%, rgb(28, 26, 25) 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2E2E2E), color-stop(1, rgb(28, 26, 25)));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #2E2E2E 0%, rgb(28, 26, 25) 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #2E2E2E 0%, rgb(28, 26, 25) 100%);
+
+    color: white;
+    width: 140px;
+    padding: 5px;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+    -webkit-box-shadow: -1px 0px 6px 2px rgba(110, 107, 110, 1);
+    -moz-box-shadow:-1px 0px 6px 2px rgba(110, 107, 110, 1);
+    box-shadow: -1px 0px 6px 2px rgba(110, 107, 110, 1);
+}
+
+.globalCombo span {
+    margin-left: 5px;
+}
+.dropdown-toggle.globalCombo:hover {
+    color: rgb(239, 162, 42);
+}
+.dropdown-menu.globalCombo {
+    margin-top: 0;
+    min-width: 100px;
+    border-radius: 0;
+    /*padding-left: 25px;*/
+}
+.dropdown-menu.globalCombo:hover {
+    background-image: none;
+    background-color: rgb(239, 162, 42);
+    color: black;
+}
+.dropdown-menu.globalCombo b {
+    color: rgb(35, 34, 33);
+    /*margin-left: 0;*/
+}
