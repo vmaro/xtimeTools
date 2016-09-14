@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  width: 1200px;
+}
+
+.xt-wrap {
+  padding: 15px;
+  min-height: 500px;
+  border-left: solid 10px rgb(28, 26, 25);
+  border-right: solid 10px rgb(28, 26, 25);
+  >* {
+    display: inline-block;
+  }
+}
+
+.xt-header {
+  color: white;
+  height: 33px;
+  background: rgb(28, 26, 25);;
+}
+
+.xt-footer {
+  color: white;
+  height: 33px;
+  background: rgb(28, 26, 25);;
+}
+.xt-side-bar {
+  width: 250px;
+  .item {
+    background-color: aquamarine;
+    &.selected {
+      background-color: antiquewhite;
+    }
+  }
+}

@@ -14,11 +14,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		.state('admin', {
 			url: '/admin',
 			controller: 'AdminCtrl',
-			templateUrl: 'xtimeTools/view/Admin.html'
+			templateUrl: 'xtimeTools/view/admin/admin.html'
 		})
+		.state('admin.promotionDetails', {
+			url: '/promotionDetails',
+			templateUrl: 'xtimeTools/view/admin/promotionDetails.html'
+		})
+		.state('admin.audienceMemberDetails', {
+			url: '/audienceMemberDetails',
+			templateUrl: 'xtimeTools/view/admin/audienceMemberDetails.html'
+		})
+		
 		.state('promoStatus', {
 			url: '/promoStatus',
 			controller: 'PromoStatusCtrl',
-			templateUrl: 'xtimeTools/view/PromoStatus.html'
+			templateUrl: 'xtimeTools/view/promoStatus.html'
 		});
 });

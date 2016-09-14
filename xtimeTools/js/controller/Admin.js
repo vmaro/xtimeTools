@@ -3,5 +3,12 @@
  */
 
 app.controller('AdminCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.sections = [{
+        name: 'Promotion Details',
+        routeTo: 'admin.promotionDetails'
+    }, {
+        name: 'Audience Member Details',
+        routeTo: 'admin.audienceMemberDetails'
+    }];
     $scope.test = 'Admin Scope test';
 }]);

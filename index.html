@@ -7,17 +7,28 @@
     <link rel="stylesheet" type="text/css" href="xtimeTools/css/style.css">
 </head>
 <body ng-app = "xtimeTools">
+    <div ng-include src="'xtimeTools/view/header/header.html'">
 
-    <a ui-sref="admin" class="btn btn-primary"> ADMIN </a>
-    <a ui-sref="promoStatus" class="btn btn-primary"> PROMO STATUS </a>
+    </div>
 
-    <div ui-view></div>
+    <div class = "xt-wrap" ui-view>
+
+    </div>
+
+    </div>
+
+    <div ng-include src="'xtimeTools/view/footer/footer.html'">
+
+    </div>
 
     <script type="text/javascript" src = "xtimeTools/lib/angular.min.js"></script>
     <script type="text/javascript" src = "xtimeTools/lib/ui-bootstrap.min.js"></script>
     <script type="text/javascript" src = "xtimeTools/lib/angular-ui-router.min.js"></script>
 
     <script type="text/javascript" src = "xtimeTools/js/app.js"></script>
+
+    <script type="text/javascript" src = "xtimeTools/js/directive/SideBar.js"></script>
+
     <script type="text/javascript" src = "xtimeTools/js/controller/Admin.js"></script>
     <script type="text/javascript" src = "xtimeTools/js/controller/PromoStatus.js"></script>
 
