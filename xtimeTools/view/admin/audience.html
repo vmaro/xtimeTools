@@ -1,0 +1,18 @@
+<form
+        novalidate
+        name = "audienceForm"
+        ng-submit = "downloadCvs();"
+>
+    <input
+            required
+            type = "text"
+            ng-model = "audience.promotionCode"
+    >
+
+    <a
+        target = "_blank"
+        href = "{{ downloadUrl }}"
+        ng-mouseover = "updateDownloadUrl();"
+    > Download CVS </a>
+
+</form>

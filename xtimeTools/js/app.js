@@ -4,7 +4,8 @@
 
 var app = angular.module('xtimeTools', [
 	'ui.router',
-	'ui.bootstrap'
+	'ui.bootstrap',
+	'speedBump'
 ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -16,14 +17,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			controller: 'AdminCtrl',
 			templateUrl: 'xtimeTools/view/admin/admin.html'
 		})
-		.state('admin.promotionDetails', {
-			url: '/promotionDetails',
-			templateUrl: 'xtimeTools/view/admin/promotionDetails.html'
-		})
-		.state('admin.audienceMemberDetails', {
-			url: '/audienceMemberDetails',
-			templateUrl: 'xtimeTools/view/admin/audienceMemberDetails.html'
-		})
+			.state('admin.promotionDetails', {
+				url: '/promotionDetails',
+				templateUrl: 'xtimeTools/view/admin/promotionDetails.html'
+			})
+			.state('admin.audienceMemberDetails', {
+				url: '/audienceMemberDetails',
+				templateUrl: 'xtimeTools/view/admin/audienceMemberDetails.html'
+			})
+			.state('admin.audience', {
+				url: '/audience',
+				templateUrl: 'xtimeTools/view/admin/audience.html'
+			})
+			.state('admin.promotionStatus', {
+				url: '/promotionStatus',
+				templateUrl: 'xtimeTools/view/admin/promotionStatus.html'
+			})
+			.state('admin.deletePromotion', {
+				url: '/deletePromotion',
+				templateUrl: 'xtimeTools/view/admin/deletePromotion.html'
+			})
 		
 		.state('promoStatus', {
 			url: '/promoStatus',

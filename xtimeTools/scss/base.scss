@@ -1,3 +1,7 @@
+@import "view/admin";
+@import "directive/sideBar";
+@import "directive/speedBump";
+
 body {
   margin: 0;
   width: 1200px;
@@ -5,7 +9,8 @@ body {
 
 .xt-wrap {
   padding: 15px;
-  min-height: 500px;
+  min-height: 1000px;
+  position: relative;
   border-left: solid 10px rgb(28, 26, 25);
   border-right: solid 10px rgb(28, 26, 25);
   >* {

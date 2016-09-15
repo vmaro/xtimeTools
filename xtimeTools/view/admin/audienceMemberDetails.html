@@ -1,4 +1,21 @@
-<form>
-    <input type="text">
-    <button> Save </button>
+<form
+        novalidate
+        name = "audienceMemberDetailsForm"
+        ng-submit="getAudienceMemberDetails();"
+>
+    <input
+            type="text"
+            ng-model = "audienceMemberDetails.promotionCode"
+    >
+    <input
+            type="text"
+            ng-model = "audienceMemberDetails.externalId"
+    >
+    <input
+            type="text"
+            ng-model = "audienceMemberDetails.vin"
+    >
+    <button
+            type="submit"
+    > Get Audience Member Details </button>
 </form>

@@ -1,0 +1,14 @@
+<form
+        novalidate
+        name = "deleteForm"
+        ng-submit = "deletePromotion();"
+>
+    <input
+            required
+            type = "text"
+            ng-model = "deletePromotion.promotionCode"
+    >
+    <button type = "submit"
+            ng-disabled = "deleteForm.$invalid"
+    > Delete </button>
+</form>

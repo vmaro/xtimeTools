@@ -1,0 +1,27 @@
+<form
+        novalidate
+        name = "promoStatusForm"
+        ng-submit = "updateStatus();"
+>
+    <input
+            required
+            type = "text"
+            ng-model = "promotionStatus.promotionCode"
+    >
+    <label> Enable </label>
+    <input
+            type = "radio"
+            value = "activate"
+            ng-model = "promotionStatus.status"
+    >
+    <label> Disable </label>
+    <input
+            type = "radio"
+            value = "deactivate"
+            ng-model = "promotionStatus.status"
+    >
+    <button
+            type = "submit"
+            ng-disabled = "promoStatusForm.$invalid"
+    > Update Status </button>
+</form>

@@ -1,3 +1,15 @@
-<form>
-    <input type="text">
+<form
+        novalidate
+        name = "promoDetailsForm"
+        ng-submit="getPromotionMemberDetails();"
+>
+    <input
+            required
+            type="text"
+            ng-model = "promotionDetails.promotionCode"
+    >
+    <button
+            type="submit"
+            ng-disabled = "promoDetailsForm.$invalid"
+    > Get Promotion Member Details </button>
 </form>
