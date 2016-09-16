@@ -10,15 +10,25 @@
     left: 50%;
     background-color: white; }
     .xt-speed-bump .box .header {
-      height: 25px;
-      background-color: darkblue; }
+      height: 20%;
+      padding: 5px;
+      color: white;
+      background-color: #1b1b1d; }
+      .xt-speed-bump .box .header .title, .xt-speed-bump .box .header .trigger {
+        display: inline-block; }
     .xt-speed-bump .box .body {
-      height: 70px; }
+      height: 60%;
+      padding: 5px;
+      overflow: auto; }
+      .xt-speed-bump .box .body .icon, .xt-speed-bump .box .body .content {
+        display: inline-block; }
     .xt-speed-bump .box .footer {
-      height: 25px;
+      height: 20%;
+      padding: 5px;
       text-align: center;
-      background-color: darkcyan; }
+      background-color: #505050; }
       .xt-speed-bump .box .footer button {
+        height: 100%;
         margin-right: 10px; }
 
 body {

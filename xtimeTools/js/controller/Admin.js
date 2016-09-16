@@ -2,7 +2,7 @@
  * Created by mmedrano on 9/14/2016.
  */
 
-app.controller('AdminCtrl', ['$scope', '$http', 'speedBump', function($scope, $http, speedBump) {    
+app.controller('AdminCtrl', ['$scope', '$http', 'xtSpeedBump', function($scope, $http, xtSpeedBump) {    
     $scope.promotionDetails = {
         promotionCode: ''
     };
@@ -40,12 +40,6 @@ app.controller('AdminCtrl', ['$scope', '$http', 'speedBump', function($scope, $h
     }];
 
     $scope.getPromotionMemberDetails = function () {
-        speedBump({
-            ok: function () {
-                console.log($scope.promotionDetails.promotionCode);
-            },
-            cancel: function () {}
-        });
         $http.get('/xmark/rest/admin' +
             '/promotion/' + $scope.promotionDetails.promotionCode);
     };
@@ -68,9 +62,17 @@ app.controller('AdminCtrl', ['$scope', '$http', 'speedBump', function($scope, $h
         );
     };
     $scope.deletePromotion = function () {
-        $http({
-            method: 'delete',
-            url: '/xmark/rest/admin/promotion/' + $scope.deletePromotion.promotionCode
+        xtSpeedBump({
+            type: 'commonDelete',
+            scope: $scope,
+            callbacks: {
+                'delete': function () {
+                    $http({
+                        method: 'delete',
+                        url: '/xmark/rest/admin/promotion/' + $scope.deletePromotion.promotionCode
+                    });
+                }
+            }
         });
     };
 }]);
