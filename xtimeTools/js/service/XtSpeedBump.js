@@ -4,6 +4,7 @@
 
 app.service('xtSpeedBump', ['speedBump', function(speedBump) {
     return function (config) {
+        config = config || {};
         config = angular.extend({
             'default': {
                 title: 'Warning',
@@ -17,7 +18,6 @@ app.service('xtSpeedBump', ['speedBump', function(speedBump) {
                 message: 'You have unsaved changes, are you sure you want to continue?'
             },
             'commonDelete': {
-                width: 300,
                 buttons: [{
                     key: 'delete',
                     text: 'Delete'

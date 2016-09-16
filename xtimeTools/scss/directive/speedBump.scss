@@ -7,30 +7,29 @@
   background-color: rgba(138, 138, 134, 0.58);
   .box {
     top: 50%;
-    left: 50%;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
     background-color: white;
     .header {
-      height: 20%;
       padding: 5px;
-      color: white;
-      background-color: #1b1b1d;
+      border: solid 1px;
       .title, .trigger {
         display: inline-block;
       }
     }
     .body {
-      height: 60%;
       padding: 5px;
       overflow: auto;
+      border: solid 1px;
       .icon, .content {
         display: inline-block;
       }
     }
     .footer {
-      height: 20%;
       padding: 5px;
+      border: solid 1px;
       text-align: center;
-      background-color: #505050;
       button {
         height: 100%;
         margin-right: 10px;

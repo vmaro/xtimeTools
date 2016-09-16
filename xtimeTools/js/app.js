@@ -35,7 +35,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			})
 			.state('admin.deletePromotion', {
 				url: '/deletePromotion',
-				templateUrl: 'xtimeTools/view/admin/deletePromotion.html'
+				templateUrl: 'xtimeTools/view/admin/deletePromotion.html'				
 			})
 		
 		.state('promoStatus', {
@@ -44,3 +44,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: 'xtimeTools/view/promoStatus.html'
 		});
 });
+/*app.run(function ($rootScope, $state, xtSpeedBump) {
+	$rootScope.isDirty = false;
+	$rootScope.$on('$stateChangeStart', function(e, toState) {
+		if ($rootScope.isDirty) {
+			e.preventDefault();
+			xtSpeedBump({
+				callbacks: {
+					proceed: function () {
+						$rootScope.isDirty = false;
+						$state.go(toState.name);
+					}
+				}
+			});
+		}
+	});
+});*/

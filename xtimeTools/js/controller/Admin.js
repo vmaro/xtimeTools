@@ -2,7 +2,7 @@
  * Created by mmedrano on 9/14/2016.
  */
 
-app.controller('AdminCtrl', ['$scope', '$http', 'xtSpeedBump', function($scope, $http, xtSpeedBump) {    
+app.controller('AdminCtrl', ['$scope', '$http', 'xtSpeedBump', function($scope, $http, xtSpeedBump) {
     $scope.promotionDetails = {
         promotionCode: ''
     };
@@ -64,7 +64,6 @@ app.controller('AdminCtrl', ['$scope', '$http', 'xtSpeedBump', function($scope, 
     $scope.deletePromotion = function () {
         xtSpeedBump({
             type: 'commonDelete',
-            scope: $scope,
             callbacks: {
                 'delete': function () {
                     $http({
@@ -74,5 +73,5 @@ app.controller('AdminCtrl', ['$scope', '$http', 'xtSpeedBump', function($scope, 
                 }
             }
         });
-    };
+    };    
 }]);

@@ -5,7 +5,7 @@
 app.directive("sideBar", function ($state) {
     return {
         scope: {
-            list: '='
+            list: '='            
         },
         restrict: "EA",
         replace: true,
